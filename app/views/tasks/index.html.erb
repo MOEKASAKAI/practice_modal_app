@@ -27,3 +27,14 @@
 <br>
 
 <%= link_to 'New Task', new_task_path %>
+<div class = "new-task" id="new-task-show">
+  <p>♡modal♡</p>
+</div>
+<div class = "new-task-modal-wrapper" id="new-task-modal">
+  <div class = "modal">
+    <div class = "close-modal">
+      <p class = "fa-times">x</p>
+      <%= render 'form', task: @task %>
+    </div>
+  </div>
+</div>
